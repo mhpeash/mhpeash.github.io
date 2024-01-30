@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>mhpeash-Portfolio</title>
+<meta charset="utf-8">
+<meta name="description" content="I'm Mohammad Mohibul Hasan from Dhaka Bangladesh.This is my Portfolio">
+<meta name="keywords" content="mhpeash,mhpeash portfolio,portfolio,Portfolio,my portfolio">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="bootstrap.min.css">
+<link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script type="text/javascript" src="jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<style >
+
+  body
+  {
+      font: 400 15px Lato, sans-serif;
+      line-height: 1.8;
+
+  }
+
+  #bg1
+  {
+    background-image: url("p1.1.jpg");
+    background-size:100% 80%;
+    background-repeat: no-repeat;
+    padding: 0px;
+    margin-top:0px;
+  }
+  #rowbg
+  {
+    background-color:rgba(0,0,0,0.5);
+    height:872px;
+    width:100%;
+    margin:0px;
+  }
+
+
+.sectiontr
+{
+  background-color:rgb(255,204,51);
+  margin-top:50px;
+  margin-bottom:50px;
+}
+.sectionstruct
+{
+  //background-color: rgb(24,188,156);
+//  background-color: black;
+  height:950px;
+}
+
+.container-fluid
+{
+  padding: 0px;
+}
+
+  .navbar
+  {
+    margin-bottom:0px;
+    background-color:rgb(255,204,51);
+    z-index: 9999;
+    border: 0;
+    font-size: 15px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 3px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+  }
+
+  .navbar li a, .navbar .navbar-brand
+  {
+      color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a
+   {
+      color: black !important;
+      background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle
+   {
+      border-color: transparent;
+      color: #fff !important;
+  }
+  footer .glyphicon
+   {
+    font-size: 50px;
+    margin-bottom: 20px;
+    color:rgb(255,204,51);
+  }
+  .slideanim
+  {
+    visibility:hidden;
+  }
+  .slide
+   {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+  }
+
+
+#covertext
+{
+  color: #fff;
+  font-size: 17px;
+  font-family: Montserrat, sans-serif;
+  margin: 60px 50px;
+}
+
+#textsection
+{
+  margin-top:50px;
+  padding: 50px;
+  color: black;
+}
+
+.grow:hover
+{
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+#Project .well a
+{
+  text-decoration: none;
+  color: black;
+
+}
+
+/* Add shadows on hover */
+#Project .well:hover
+ {
+    box-shadow: 0 8px 12px 0  black;
+}
+
+#resume .btn
+{
+  padding: 40px;
+  color:black;
+  font-size: 20px;
+  margin-top: 200px;
+}
+
+#resume .btn:hover
+{
+  color:rgb(255,204,51);
+  background-color: black;
+
+}
+#resume .btn a:hover
+{
+  text-decoration: none;
+  //color:rgb(255,204,51);
+
+  color: rgb(13,175,74);
+}
+.cvheader
+{
+background-color: rgba(149, 204, 46, 0.8);
+ color:black;
+ width: 100%;
+ height: 70px;
+ padding:20px;
+ font-size:25px;
+
+}
+
+.cvinfo
+{
+	margin-top:40px;
+	padding-bottom:20px;
+	font-family:sans-serif,Verdana;
+	font-size:20px;
+	color:black;
+}
+
+#contact a:hover
+{
+  border: 1px solid black;
+}
+
+
+/* Change the width of the three columns to 100%
+(to stack horizontally on small screens) */
+@media only screen and (max-width: 600px)
+ {
+    .well
+     {
+        //width: 80%;
+        //height: 50%;
+    }
+}
+
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+        font-size: 150px;
+    }
+
+  }
+  @media screen and (max-width:513px)
+  {
+    #covertext
+    {
+      font-size:15px;
+    }
+  }
+
+  @media screen and (max-width:784px)
+  {
+    .img-responsive
+    {
+      width: 150px;
+      height: 150px;
+    }
+  }
+
+  @@media screen and (max-width:400px)
+  {
+    .well
+    {
+      font-size: 10px;
+    }
+
+  }
+  @media screen and (max-width:380px)
+  {
+    #covertext
+    {
+      font-size:10px;
+    }
+  }
+
+  @media screen and (min-width:1400px)
+   {
+    #bg1
+    {
+        background-size:100% 86%;
+    }
+    #rowbg
+    {
+      height: 935px;
+    }
+.sectiontr
+    {
+      margin-top: 110px;
+      margin-bottom: 100px;
+    }
+  }
+
+
+  @media screen and (max-width:1024px)
+  {
+    #bg1
+    {
+      //  background-size:100% 65%;
+    }
+    #rowbg
+    {
+    //  height: 710px;
+    }
+
+  }
+
+
+</style>
+
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<!--..............................navbar section............................................................................-->
+<nav class="navbar navbar-default navbar-fixed-top" style="background-color:rgb(255,204,51)">
+<div class="container">
+  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+<div class="collapse navbar-collapse" id="myNavbar">
+
+<ul class="nav navbar-nav navbar-right">
+  <li><a href="#Project">asp.net project</a></li>
+  <li><a href="#Android">android app</a></li>
+  <li><a href="#training">certification</a></li>
+  <li><a href="#resume">resume</a></li>
+  <li><a href="#contact">contact</a></li>
+</ul>
+</div>
+
+</div> <!--end header container-->
+</nav>
+<!--end nav section-->
+
+
+<!--.........................................................Intro section-->
+<div class="container-fluid" id="bg1">
+  <div class="container-fluid" style="height:1090px;width:100%;padding:0px">
+      <div class="row" id="rowbg">
+
+          <div class="col-sm-6" id="covertext">
+								<h1>Hi</h1>
+                <p> My name is <span style="color:rgb(24,188,156)">MOHAMMAD MOHIBUL HASAN</span>.
+                    I am a .NET Developer from<span style="font-size:20px"> Dhaka, Bangladesh</span> and working as a Jr. Software Engineer at  <a href="http://www.deshisysltd.com"><span style="color:rgb(24,188,156);text-decoration:none">Deshi Systems Ltd.</span></a>
+				            I graduated from <a href="http://www.ewubd.edu"><span style="color:rgb(24,188,156);text-decoration:none">East West University</span></a> in Computer Science and Engineering.
+                    I have completed several MVC project using<span style="color:rgb(24,188,156)"> layer architecture, MVC architecture, Entity Framework and LINQ.</span>
+                    For building my career path, my objective is to work in an environment where there is opportunity of self-assessment and
+                    self-improvement in both individual and group basis to flourish one’s capability of bringing benefits for all.</p>
+          </div>
+          <div class="col-sm-6"></div>
+      </div>
+</div>
+</div> <!--end info container section-->
+
+
+
+<!--..........................................Project Section -->
+<div id="Project" class="container" style="background-color:rgb(255,204,51);margin-top:-130px;color:black">
+    <div id="textsection"><h1>Projects</h1></div><hr>
+
+    <div class="row text-center" style="padding:50px">
+        <div class="col-sm-4">
+          <div class="well">
+            <a href="https://github.com/mhpeash/Project-BitBook"><img src="BitBook.jpg" class="img-responsive">
+              <h3>Bitbook</h3><hr>
+              <h4>A social networking site</h4>
+              <p>Technological stack: MVC, Layer Architecture, Entity Framework, <br>Bootstrap,Jquery</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="well">
+            <a href="https://github.com/mhpeash/Diagnostic-Center-Bill-Management-System-">
+              <img src="dsbms.jpg" class="img-responsive">
+              <h3>Diagonostic Center Bill Management System</h3><hr>
+              <h4>Simple Web solution for a diagonostic center</h4>
+              <p>Technological stack:Layer architecture</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="well">
+            <a href="https://github.com/mhpeash/Blog"><img src="blog.jpg" class="img-responsive">
+              <h3>Blog</h3><hr>
+              <h4>Technological blog</h4>
+              <p>Technological stack: MVC, Layer Architecture, <br>EntityFramework, <br>Bootstrap</p>
+            </a>
+          </div>
+        </div>
+</div> <!-- end row-->
+</div> <!--end project container-->
+
+
+<!--..........................................android Project Section -->
+<div id="Android" class="container" style="background-color:rgb(255,204,51);margin-top:-130px;color:black">
+    <div id="textsection"><h1>Mobile Apps</h1></div><hr>
+
+    <!-- <div class="row text-center" style="padding:50px">
+	</div> -->
+	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+
+      <div class="item active">
+        <img src="pcml.png" alt="Chania" style="width:100%;">
+       <!--  <div class="carousel-caption">
+          <h3>Chania</h3>
+          <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+        </div> -->
+      </div>
+
+      <div class="item">
+        <img src="map.png" alt="Chania" style="width:100%;">
+       <!--  <div class="carousel-caption">
+          <h3>Chania</h3>
+          <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+        </div> -->
+      </div>
+    
+      <div class="item">
+        <img src="teachers.png" alt="Flower" style="width:100%;">
+       <!--  <div class="carousel-caption">
+          <h3>Flowers</h3>
+          <p>Beautiful flowers in Kolymbari, Crete.</p>
+        </div> -->
+      </div>
+
+      <div class="item">
+        <img src="pti.png" alt="Flower" style="width:100%;">
+       <!--  <div class="carousel-caption">
+          <h3>Flowers</h3>
+          <p>Beautiful flowers in Kolymbari, Crete.</p>
+        </div> -->
+      </div>
+  
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+	
+       
+</div> <!-- end row-->
+</div> <!--end android project container-->
+
+
+
+
+
+
+
+<!--........................................ Container (Training Section) -->
+<div id="training" class="container-fluid sectiontr "  style="">
+
+  <div class="container" style="background-color:white">
+      <div id="textsection"><h1>Professional Training</h1><hr></div>
+
+      <div class="row" style="padding:50px">
+        <div class="col-sm-6">
+              <h3>Title:Web and Desktop Application Development (.NET)</h3><hr>
+              <p>
+                Organized by <bold>BASIS</bold>  Institute of Technology & Management
+                (BITM) under Skills for Employment Investment Program (SEIP) project.
+              </p> <hr>
+              <h4>Covered Topic:</h4>
+              <ul>
+                <li>Basic C#</li>
+                <li>Desktop Application</li>
+                <li>Layer Architecture</li>
+                <li>MVC</li>
+                <li>DBMS</li>
+                <li>Entity Framework</li>
+              </ul>
+              <hr>
+              <h4>Training Duration:</h4>3 Months <hr>
+        </div>
+
+        <div class="col-sm-6">
+
+          <h3>Title:Desktop and Web Application Development (.NET)</h3><hr>
+          <p>
+            Organized by <bold>Ministry of ICT</bold>  and jointly managed & implemented by Bdjobs.com and Ernst & Young LLP.
+          </p> <hr>
+          <h4>Covered Topic:</h4>
+          <ul>
+            <li>Basic C#</li>
+            <li>jQuery validation</li>
+            <li>Web Development using Layer Architecture</li>
+            <li>Desktop Application Development</li>
+            <li>MVC Architecture</li>
+            <li>Object Oriented Programing in C#</li>
+            <li>Bootstrap</li>
+          </ul>
+          <hr>
+          <h4>Training Duration:</h4>3 Months <hr>
+        </div>
+    </div>
+
+  </div>
+
+</div>
+<!--..........end of training section-->
+
+
+
+
+
+
+
+<!-- .......................................................Container (Resume Section) -->
+<div id="resume" class="container sectionstruct" style="background-color:rgb(255,204,51);margin-top:50px">
+  <div id="textsection"><h1>Resume</h1><hr></div>
+  <div class="row" >
+      <div class="col-sm-6">
+
+        <button type="button" class="btn btn-default btn-block"data-toggle="modal" data-target="#myModal">Show Resume</button>
+
+				<!--modal test-->
+        <div class="modal fade" id="myModal" role="dialog">
+					<div class="modal-dialog">
+
+						<!-- Modal content-->
+						<div class="modal-content">
+							  <div class="modal-header">
+								    <button type="button" class="close" data-dismiss="modal">&times;</button>
+								  <!--  <h2 class="modal-title" style="background-color: rgba(149, 204, 46, 0.8);">Resume of Md. Mohibul Hasan</h2>-->
+							  </div>
+
+							  <div class="modal-body">
+
+                  <div class="container-fluid">
+
+                      <div class="row" id="cvupper">
+                        <div class="col-sm-4"><img  class="img-thumbnail" src="https://github.com/mhpeash/oldPortfolio/blob/master/mhpeash.jpg?raw=true" width="280" height="200"></div>
+                        <div class="col-sm-8" id="cvupperright">
+                          <h1>MOHAMMAD MOHIBUL HASAN</h1><br>127/1 East Goran, Road No #08, Khilgaon, Dhaka-1219
+                          <br> <kbd> Phone:</kbd>+88-01671498008 <br>
+                         <kbd>E-mail:</kbd> mhpeash@gmail.com <br>
+												 <kbd>Linkedin:</kbd> <a href="https://www.linkedin.com/in/mhpeash">https://www.linkedin.com/in/mhpeash</a>
+                          <hr>
+
+
+                        </div>
+                      </div>
+
+
+                      <div class="cvheader"><strong>Career Objective</strong></div>
+                        <p class="cvinfo">
+                          To work in an environment where there is opportunity of self-assessment and
+                          self-improvement in both individual and group basis to flourish one's capability
+                          of bringing benefits for all.
+                        </p>
+<!--
+                        <div class="cvheader"><strong>Contemporary Status</strong></div>
+                        <p class="cvinfo">
+                          Fresh Graduate. Looking for a entry level job.
+                        </p>
+
+
+-->
+                        <div class="cvheader"><strong>Certification</strong></div>
+												<div class="cvinfo">
+													<ul>
+														<li>
+															Desktop and Web Application Development (.NET)
+														Organized by Ministry of ICT and jointly managed & implemented by Bdjobs.com and Ernst & Young LLP.
+													</li>
+														<li>
+															Completed three months training on Web Application Development (.Net)
+														organized by<strong> BASIS Institute of Technology & Management (BITM)</strong> under
+														Skills for Employment Investment Program (SEIP) project.
+														</li>
+													</ul>
+
+												</div>
+
+
+
+		  <div class="cvheader"><strong>Skills and Competence</strong></div>
+			<div class="cvinfo">
+				<ul>
+							<li><strong>Programming Language:</strong>C, C#, Prolog</li>
+							<li><strong>Model Checking language:</strong>PROMEL</li>
+							<li><strong>Web Design:</strong> HTML5 , CSS3, Bootstrap, JQuery</li>
+							<li><strong>Framework:</strong> Entity framework with MVC Architecture</li>
+							<li><strong>Database:</strong>Microsoft SQL Server 2013</li>
+							<li><strong>Project Management Tool:</strong> Trello</li>
+							<li><strong>Operating System:</strong>Windows ,Linux(Ubuntu)</li>
+							<li><strong>Tools:</strong>Microsoft Visual Studio 2013, Microsoft SQL Server 2012 ,
+																												Pspice, Spin Model Checker, UML, Adobe Photoshop, Adobe Light Room, Movie Maker,
+																												Wondershare, AVS Video Editor</li>
+							<li>Have practical experience on multi-layer architecture through a project</li>
+							<li> Sound knowledge on object oriented programming</li>
+							<li>Networking Tools: Wireshark, Fing, TeamViewer</li>
+							<li>Ability to convey technical solutions in a clear and concise manner.</li>
+							<li>Have basic concepts about IP configuration</li>
+							<li>Practical experience about LAN through connecting multiple machine</li>
+							<li>Capable of configuring networking devices like router and switch</li>
+							<li>Capable of installing computer hardware like motherboard, processor RAM etc.</li>
+
+
+				</ul>
+			</div>
+
+
+
+<div class="cvheader"><strong>Projects</strong></div>
+  <div class="cvinfo">
+														<p>
+															<strong>(I) Title:Diagnostic Center Bill Management System</strong> <br>
+															This web application will manage billing activities for a small diagnostic center. Followings are the features of the mentioned application
+<ul>
+	<li>Test Type Setup</li>
+	<li>Test Set-Up</li>
+	<li>Test Request Entry</li>
+	<li>Date Wise Dew Bill</li>
+	<li>Date Wise Total Bill</li>
+	<li>Search Bill by Name</li>
+
+
+</ul>
+<strong>Technology Stack:</strong> Three Layer Architecture
+<strong>	Contribution:</strong>
+Basically, I have implemented the Test Type Setup, Test Set-up, Test Request Entry and search bill by Patient Name.
+<br>
+<strong>Project URL:</strong><a href="https://github.com/mhpeash/DCBMS">https://github.com/mhpeash/DCBMS</a>
+
+													</p>
+													 <hr>
+<p>
+<strong>	(II) Title: Hekkur Diary (Technological Blog )</strong> <br>
+	Currently I’m working with this project. This blog is consist with few features like
+<ul>
+	<li>Blog’s post authentication by admin </li>
+	<li> Searching Post</li>
+	<li> Create account </li>
+	<li>Edit user all information</li>
+	<li>Posting in blog</li>
+	<li>Commenting</li>
+	<li>Deleting Post</li>
+	<li>Reset Password</li>
+
+
+</ul>
+
+<strong>	Technology Stack: </strong>MVC, Entity framework, Layer Architecture, Lambda Expression, LINQ, Bootstrap
+	<strong>Tools used in the project: </strong>Microsoft Visual Studio 13, Microsoft SQL Server 12, Resharper
+	<br>
+	<strong>Project URL:</strong> <a href="https://github.com/mhpeash/Blog">https://github.com/mhpeash/Blog</a>
+</p>
+      <hr>
+			<p>
+
+
+																<strong>(III) Title: BitBook (A Social Networking Site)</strong>
+
+																	This web application provides below features like
+																<ul>
+																	<li>Create account</li>
+																	<li>	update status
+																	</li>
+																	<li>	remove status</li>
+																	<li>	change cover photo</li>
+																		 <li>change profile photo</li>
+																		 <li>search friend</li>
+																		 <li>reset password</li>
+																		 <li>add friend request</li>
+																		 <li>logout.</li>
+																		 All description are shown in project URL
+																</ul>
+
+
+															<strong>Project URL: </strong> <a href="https://github.com/mhpeash/Project-BitBook">https://github.com/mhpeash/Project-BitBook</a>
+
+
+
+
+			</p>
+<hr>
+<p>
+			         <strong> (IV)Project Title:</strong> Verification of Web Service Composition Using SPIN.
+							 <br><strong>Tools used in the project:</strong> Active TCL, Cygwin, Graphviz-2.34, GsView.
+							 <br><strong>Project Description:</strong> In web service there are huge business transaction
+							 occurs and sometimes it needs to deal with faults that can arise in any stage of transaction, while roll
+							  back mechanism is not possible. In order to achieve a common business goal, the protocol of interaction
+								 must be correct. In our project we have established a Buyer-Broker model and encode this overall model
+								  into PROMELA (Model checking Language). If any oversight happened then a compensation mechanism has been
+									 used to handle the situation. We have used linear temporal logic for verifying the model accuracy
+							 <br><strong>Contribution:</strong> Basically, I have implemented the compensation mechanism part and also tested
+							 the overall model by using temporal logic.
+
+</p>
+
+                            </div>
+
+
+
+                          <div class="cvheader"><strong>Academic Qualification</strong></div>
+                          <div class="cvinfo text-center">
+                            <table border="1px">
+                              <tr>
+                                <th>Year</th>
+                                <th>Examination</th>
+                                <th>Institute</th>
+                                <th>Result (GPA)</th>
+                              </tr>
+                              <tr>
+                                <td>2011-2015</td>
+                                <td>BSc In Computer Science and Engineering</td>
+                                <td>Department of Computer Science and Engineering, East West University, Dhaka</td>
+                                <td>2.54(Out of 4)<br>(Self-administered CGPA Scale)</td>
+                              </tr>
+
+                              <tr>
+                                <td>2009</td>
+                                <td>Higher Secondary Certificate</td>
+                                <td>Bir Shrestha Noor Mohammad Rifles Public School and College</td>
+                                <td>4.10 (Out Of 5)</td>
+                              </tr>
+
+                              <tr>
+                                <td>2007</td>
+                                <td>Secondary School Certificate</td>
+                                <td>Khilgaon Government High School and College</td>
+                                <td>5.00 (Out Of 5)</td>
+                              </tr>
+                            </table>
+                          </div>
+
+                          <div class="cvheader"><strong>Extra-Curricular Activities</strong></div>
+                          <div class="cvinfo">
+														<ul>
+															<li>Microsoft Student Partner from January to August, 2014.</li>
+															<li>  Data Accumulator, which was relevant with a Research that linked with idea
+		                            about Disaster and management System on school going children funded by Department of Sociology, East West University.</li>
+																<li> Have some experience with video editing through my departmental rag program.</li>
+														</ul>
+
+
+                          </div>
+
+
+                          <div class="cvheader"><strong>Strengths</strong></div>
+                          <div class="cvinfo">
+                            # A team player
+                            <br># Analytical Skills
+                            <br># Innovative in solving problems
+                            <br># Evaluate options before making decisions
+                            <br># Quick Learner
+                            <br># Energetic Mentality for solving problem
+                          </div>
+
+                          <div class="cvheader"><strong>Language Skills</strong></div>
+                          <div class="cvinfo">
+														<ul>
+															<li>Bangla: Native Language</li>
+															<li>English:Can speak and write</li>
+															<li>Hindi: Can speak and understand</li>
+														</ul>
+                          </div>
+
+                            <div class="cvheader"><strong>Personal Information</strong></div>
+                            <div class="cvinfo">
+
+                              <strong>Father's Name: </strong>Mohammad Musharraf Hossain<br>
+                              <strong>Mother's name: </strong>Rokeya Begum<br>
+                              <strong>Date of Birth:</strong> August 28, 1992<br>
+                              <strong>Nationality: </strong>Bangladeshi<br>
+                              <strong>Religion: </strong>Islam, Sunni<br>
+                              <strong>Marital Status: </strong>Single<br>
+                              <strong>Permanent Address:</strong> 127/1 East Goran, Road No #08, Khilgaon, Dhaka-1219<br>
+                              <strong>Present Address:</strong> 127/1 East Goran, Road No #08, Khilgaon, Dhaka-1219
+                            </div>
+
+
+                            <div class="cvheader"><strong>References</strong></div>
+                            <div class="cvinfo">
+                              # <strong>Dr. Shamim Hasnat Ripon</strong>, Chairperson and Associate Professor, Department of Computer Science and Engineering, East West University Dhaka. Email:ndshr@ewubd.edu
+                              Tel: 09666775577, Ext. 221 <br>
+                              # <strong>Dr. Md. Nawab Yousuf Ali</strong> Associate Professor, Department of Computer Science and Engineering, East West University, Dhaka.
+                              Phone: 09666775577, Ext: 107 Email: nawab@ewubd.edu
+                          </div>
+
+
+                        </div>
+
+
+							  </div> <!--end modal body section-->
+
+							  <div class="modal-footer">
+								<button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+							  </div>
+
+						</div> <!--end modal content-->
+
+					</div>
+				</div>
+
+      </div>
+
+
+      <div class="col-sm-6">
+          <button type="button" class="btn btn-default btn-block" onClick="location.href='https://github.com/mhpeash/mhpeash.github.io/raw/master/Resume%20of%20Md.%20Mohibul%20Hasan.pdf'" value='Download Resume'>
+
+					Download Resume
+          </button>
+    </div>
+</div>
+</div><!--end of resume section-->
+
+
+
+<!--............................................. Container (Contact Section) -->
+
+
+
+<div id="contact" class="container-fluid sectionstruct" style="background-color:rgb(255,204,51);margin-top:50px">
+
+  <div id="textsection"><h1>Contact</h1><hr></div>
+  <div class="container" style="background-color:white">
+    <div class="row" style="padding:50px">
+
+      <div class="col-sm-3">
+        <a href="https://facebook.com/mmhpeash">
+            <img src="facebook.jpg" class="img-responsive" title="Follow me on facebook">
+        </a>
+
+      </div>
+
+      <div class="col-sm-3">
+        <a href="https://bd.linkedin.com/in/mhpeash">
+          <img src="linkedin.png" class="img-responsive " title="Follow me on Linkedin">
+        </a>
+
+      </div>
+
+      <div class="col-sm-3">
+        <a href="https://github.com/mhpeash"><img src="git.png" class="img-responsive " title="Follow me on Github"></a>
+
+      </div>
+
+      <div class="col-sm-3">
+            <a href="https://www.flickr.com/photos/mhpeash/">
+            <img src="flickr.png" class="img-responsive " title="Follow me on Flickr">
+            </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+<!--..............................................................footer section -->
+<footer class="container-fluid text-center">
+
+  <a href="#myPage"title="To Top">
+    <!--<span class="glyphicon glyphicon-arrow-up">-->
+    		<img src="http://www.bme.psu.ac.th/img/5743aa706e5a9dd67c646efd_back_to_top_icon_regular.png" width="80" height="80" title="Click">
+    </span>
+
+  </a>
+  <p><kbd>BACK-TO-TOP</kbd></p>
+
+</footer>
+<!--........................end footer here.........................-->
+
+
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+</body>
+</html>

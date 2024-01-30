@@ -1,0 +1,29 @@
+::selection {
+  background-color: #FFC815;
+  color: #fff;
+}
+::-moz-selection {
+  background-color: #FFC815;
+  color: #fff;
+}
+
+.theme-color {
+  color: #FFC815;
+}
+
+.home-banner .social-icons a:hover,
+.btn-theme, 
+.theme-after:after,
+.theme-bg {
+  background: #FFC815;
+}
+
+
+.effect{
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+.kbdd{
+	font-size: 126.5%;
+	
+}
